@@ -1,1 +1,0 @@
-poczatkowy tekst
