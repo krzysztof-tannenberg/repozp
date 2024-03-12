@@ -24,7 +24,7 @@ jobs:
 
       - name: Run PEP 8 check
         run: pycodestyle .
-name: PEP 8 Check
+name: checkpep8
 
 on:
   push:
