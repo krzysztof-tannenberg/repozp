@@ -1,0 +1,26 @@
+name: PEP 8 Check
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pep8:
+    name: Check PEP 8
+    runs-on: windows-latest 
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pycodestyle
+
+      - name: Run PEP 8 check
+        run: pycodestyle .
