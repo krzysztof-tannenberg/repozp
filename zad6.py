@@ -1,5 +1,4 @@
 def operacje_na_listach(lista1, lista2):
-    # Połączenie list
     polaczona_lista = lista1 + lista2
 
     # Usunięcie duplikatów
@@ -11,12 +10,9 @@ def operacje_na_listach(lista1, lista2):
     return potegi_3
 
 
-# Przykładowe listy
 lista1 = [1, 2, 3]
 lista2 = [3, 4, 5]
 
-# Wywołanie funkcji i zwrócenie wyniku
 wynik = operacje_na_listach(lista1, lista2)
 
-# Wyświetlenie wyniku
 print(wynik)

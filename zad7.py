@@ -31,9 +31,7 @@ breweries_data = response.json()
 # Utworzenie listy instancji klasy Brewery
 breweries_list = [Brewery(brewery) for brewery in breweries_data]
 
-# Wyświetlenie liczby zwróconych wyników
 print(f"Liczba zwróconych wyników: {len(breweries_list)}\n")
 
-# Wyświetlenie informacji o każdej browarze
 for brewery in breweries_list:
     print(brewery)
