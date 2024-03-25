@@ -59,27 +59,3 @@ class Order:
         return order_info
 
 
-# Tworzenie obiektów bibliotek
-library1 = Library("New York", "Broadway 123", "10001", "9:00 - 18:00", "+1234567890")
-library2 = Library("Los Angeles", "Hollywood Blvd 456", "90028", "10:00 - 20:00", "+1987654321")
-
-# Tworzenie obiektów książek
-book1 = Book(library1, "2022-01-01", "John", "Smith", 300)
-book2 = Book(library1, "2021-12-15", "Emily", "Brown", 250)
-book3 = Book(library2, "2021-11-20", "Michael", "Johnson", 400)
-book4 = Book(library2, "2022-02-28", "Emma", "Williams", 350)
-book5 = Book(library2, "2022-03-10", "Daniel", "Taylor", 280)
-
-# Tworzenie obiektów pracowników
-employee1 = Employee("Alice", "Jones", "2021-05-10", "1990-03-15", "New York", "Broadway 123", "10001")
-employee2 = Employee("Bob", "Davis", "2020-12-01", "1985-08-20", "Los Angeles", "Hollywood Blvd 456", "90028")
-employee3 = Employee("Eva", "Martinez", "2022-02-20", "1995-11-05", "Los Angeles", "Hollywood Blvd 456", "90028")
-
-# Tworzenie obiektów zamówień
-order1 = Order(employee1, "Student A", [book1, book3, book5], "2022-03-20")
-order2 = Order(employee2, "Student B", [book2, book4], "2022-03-25")
-
-# Wyświetlenie obu zamówień
-print(order1)
-print("\n")
-print(order2)
